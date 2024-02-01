@@ -23,7 +23,7 @@ keymap.set("n", "te", ":tabedit<Return>", opts)
 keymap.set("n", "<tab>", ":bn<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 -- Close Tab(clear tab buffer)
-keymap.set("n", "<C-x>", ":bd<Return>:bn<Return>", opts)
+keymap.set("n", "<C-x>", ":bd<Return>:tabprev<Return>", opts)
 
 -- Split Screen
 keymap.set("n", "SS", ":split<Return>", opts)
