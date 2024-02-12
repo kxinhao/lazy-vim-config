@@ -50,7 +50,7 @@ end, opts)
 -- Stuff from prime
 --------------------
 -- Find and replace
-keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- Exit and return to directory netRW
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- shift lines when highlighted
