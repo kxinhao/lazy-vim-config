@@ -18,16 +18,16 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 keymap.set("n", "<C-m>", "<C-i>", opts)
 
 -- Tabs
-keymap.set("n", "te", ":tabedit<Return>", opts)
---keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<tab>", ":bn<Return>", opts)
-keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+keymap.set("n", "te", ":tabedit<CR>", opts)
+--keymap.set("n", "<tab>", ":tabnext<CR>", opts)
+--keymap.set("n", "<tab>", ":bn<CR>", opts)
+keymap.set("n", "<S-tab>", ":bn<CR>", opts)
 -- Close Tab(clear tab buffer)
-keymap.set("n", "<C-x>", ":bd<Return>:tabprev<Return>", opts)
+keymap.set("n", "<C-x>", ":bd<CR>:tabprev<CR>", opts)
 
 -- Split Screen
-keymap.set("n", "SS", ":split<Return>", opts)
-keymap.set("n", "SV", ":vsplit<Return>", opts)
+keymap.set("n", "SS", ":split<CR>", opts)
+keymap.set("n", "SV", ":vsplit<CR>", opts)
 
 -- Move Window
 keymap.set("n", "sh", "<C-w>h")
